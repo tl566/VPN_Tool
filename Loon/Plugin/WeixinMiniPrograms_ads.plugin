@@ -173,142 +173,142 @@
 [Script]
 
 # > AShare
-http-response ^https:\/\/tan\.ipnas\.ltd\/wp-json\/wp\/v2 script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_39
+http-response ^https:\/\/tan\.ipnas\.ltd\/wp-json\/wp\/v2 script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=AShare
 
 # > AppleAndroid 弹框显示内容
-http-response ^https:\/\/iosoi\.cn\/wp-json\/wp\/v2\/posts/\d+ script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_41
+http-response ^https:\/\/iosoi\.cn\/wp-json\/wp\/v2\/posts/\d+ script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet
 
 # 辅助去除页面嵌入式式卡片广告
-http-response ^https:\/\/iosoi\.cn\/wp-content\/plugins script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_43
+http-response ^https:\/\/iosoi\.cn\/wp-content\/plugins script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet2
 
 # > APP基地
-http-response ^https:\/\/wx\.wxqqurl\.cn\/wp-json\/watch-life-net\/v1\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_45
+http-response ^https:\/\/wx\.wxqqurl\.cn\/wp-json\/watch-life-net\/v1\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=APP基地
 
 # > 不完全指北
-http-response ^https:\/\/4thdimension\.top\/wp\-json\/watch\-life\-net\/v1\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_50
+http-response ^https:\/\/4thdimension\.top\/wp\-json\/watch\-life\-net\/v1\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=不完全指北
 
 # > 茶颜悦色 微信小程序净化
-http-response ^https:\/\/miniapp\.sexytea2013\.com\/cms\/slot\/queryByCodes\?codes=INDEX_TOP_BANNER script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/cyys.js, requires-body=true, timeout=60 ,tag=cyys_61
+http-response ^https:\/\/miniapp\.sexytea2013\.com\/cms\/slot\/queryByCodes\?codes=INDEX_TOP_BANNER script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/cyys.js, requires-body=true, timeout=60 ,tag=茶颜悦色
 
 # > COCO点单 微信小程序净化
-http-response ^https:\/\/coco-com\.e\.verystar\.net\/v1\/home\/info script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/coco.js, requires-body=true, timeout=60 ,tag=coco_65
+http-response ^https:\/\/coco-com\.e\.verystar\.net\/v1\/home\/info script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/coco.js, requires-body=true, timeout=60 ,tag=CoCo
 
 # > 滴滴出行 微信小程序个人中心净化 由TEXAS和豆豆提供
-http-response ^https:\/\/common\.diditaxi\.com\.cn\/common\/v5 script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/didi.js, requires-body=true, timeout=60 ,tag=didi_70
+http-response ^https:\/\/common\.diditaxi\.com\.cn\/common\/v5 script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/didi.js, requires-body=true, timeout=60 ,tag=滴滴出行
 
 # > 电视盒子君
-http-response ^https:\/\/tvapp\.guilaile\.cn\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_78
+http-response ^https:\/\/tvapp\.guilaile\.cn\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=电视盒子君
 
 # > EMS 微信小程序净化 由TEXAS和豆豆提供
-http-response ^https:\/\/ump\.ems\.com\.cn\/new-generation-extend\/redis\/pageInfoByChannel script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/ems.js, requires-body=true, timeout=60 ,tag=ems_83
+http-response ^https:\/\/ump\.ems\.com\.cn\/new-generation-extend\/redis\/pageInfoByChannel script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/ems.js, requires-body=true, timeout=60 ,tag=EMS
 
 # > free黑科技
-http-response ^https:\/\/www\.freeheikeji\.cn\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_89
+http-response ^https:\/\/www\.freeheikeji\.cn\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=free黑科技
 
 # > 公子黑科技
-http-response ^https:\/\/gz\.gongzijx\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_102
+http-response ^https:\/\/gz\.gongzijx\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=公子黑科技
 
 # > 搞机师兄
-http-response ^https:\/\/gjsx\.vip\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_104
+http-response ^https:\/\/gjsx\.vip\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=搞机师兄
 
 # > 古茗 微信小程序净化
-http-response ^https:\/\/newton\.gumingnc\.com\/newton-buyer\/newton\/buyer\/(ump|touch|external\/front) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/ming.js, requires-body=true, timeout=60 ,tag=ming_106
+http-response ^https:\/\/newton\.gumingnc\.com\/newton-buyer\/newton\/buyer\/(ump|touch|external\/front) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/ming.js, requires-body=true, timeout=60 ,tag=古茗
 
-http-response ^https:\/\/hkj178\.com\/wp\-json\/mp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_122
+http-response ^https:\/\/hkj178\.com\/wp\-json\/mp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=GuMing
 
 # > 黑科技软件源
-http-response ^https:\/\/qj\.bpojie\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_124
+http-response ^https:\/\/qj\.bpojie\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=黑科技软件源
 
 # > 火箭软件库
-http-response ^https:\/\/jt\.jxjt888\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_126
+http-response ^https:\/\/jt\.jxjt888\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=火箭软件库
 
 # > 科技窝
-http-response ^https:\/\/www\.benbenfx\.xyz\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_144
+http-response ^https:\/\/www\.benbenfx\.xyz\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=科技窝
 
-http-response ^https:\/\/www\.bbkj\.work\/wp-json\/watch-life-net\/v1\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_145
+http-response ^https:\/\/www\.bbkj\.work\/wp-json\/watch-life-net\/v1\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=科技窝1
 
-http-response ^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\/home script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/lawson.js, requires-body=true, timeout=60 ,tag=lawson_152
+http-response ^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\/home script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/lawson.js, requires-body=true, timeout=60 ,tag=科技窝2
 
 # > 老胡群英会
-http-response ^https:\/\/g\.syshhc\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_156
+http-response ^https:\/\/g\.syshhc\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=老胡群英会
 
 # > 老鬼黑科技
-http-response ^https:\/\/www\.laoguikeji\.cn\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_158
+http-response ^https:\/\/www\.laoguikeji\.cn\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=老鬼黑科技
 
 # > 漫画台 Lite
-http-response ^https?:\/\/comic\.321mh\.com\/app_api\/v\d\/getcomicinfo_body script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/manhuatailite.js, requires-body=true, timeout=60 ,tag=manhuatailite_169
+http-response ^https?:\/\/comic\.321mh\.com\/app_api\/v\d\/getcomicinfo_body script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/manhuatailite.js, requires-body=true, timeout=60 ,tag=漫画台Lite
 
 # > 挪瓦咖啡 微信小程序净化
-http-response ^https:\/\/webapi\.qmai\.cn\/web\/catering\/design\/homePage-Config script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/kff.js, requires-body=true, timeout=60 ,tag=kff_196
+http-response ^https:\/\/webapi\.qmai\.cn\/web\/catering\/design\/homePage-Config script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/kff.js, requires-body=true, timeout=60 ,tag=挪瓦咖啡
 
 # > 屈臣氏 微信小程序开屏(或许APP也可以干掉)
-http-response ^https:\/\/mystore-gw\.watsonsvip\.com\.cn\/gfu\/popup\/advert\/launch script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/watsons.js, requires-body=true, timeout=60 ,tag=watsons_203
+http-response ^https:\/\/mystore-gw\.watsonsvip\.com\.cn\/gfu\/popup\/advert\/launch script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/watsons.js, requires-body=true, timeout=60 ,tag=屈臣氏
 
-http-response ^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa\.homeConfig script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/qingju.js, requires-body=true, timeout=60 ,tag=qingju_208
+http-response ^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa\.homeConfig script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/qingju.js, requires-body=true, timeout=60 ,tag=qingju
 
 # > 全家微会员 微信小程序净化
-http-response ^https:\/\/minifm\.maxxipoint\.com\/banner\/list script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/FamilyMart.js, requires-body=true, timeout=60 ,tag=FamilyMart_210
+http-response ^https:\/\/minifm\.maxxipoint\.com\/banner\/list script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/FamilyMart.js, requires-body=true, timeout=60 ,tag=全家微会员
 
 # > 苏打校园APP 净化(需要卸载重装）@TEXAS提供
-http-response ^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ATOP script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/soda.js, requires-body=true, timeout=60 ,tag=soda_217
+http-response ^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ATOP script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/soda.js, requires-body=true, timeout=60 ,tag=苏打校园
 
 # > 森茂小苑
-http-response ^https:\/\/[a-z]+\.smkj33\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_239
+http-response ^https:\/\/[a-z]+\.smkj33\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=森茂小苑
 
-http-response ^https:\/\/d\.smkj33\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_240
+http-response ^https:\/\/d\.smkj33\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=森茂小苑1
 
 # > 世颜说
-http-response ^https:\/\/d\.syshhc\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_242
+http-response ^https:\/\/d\.syshhc\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=世颜说
 
 # > 酸鸡汤、老爷花苑、御花园
-http-response ^https:\/\/[a-z]+\.ddly666\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_244
+http-response ^https:\/\/[a-z]+\.ddly666\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_1
 
 # > 搜罗好货
-http-response ^https:\/\/www\.i3zh\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_246
+http-response ^https:\/\/www\.i3zh\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=搜罗好货
 
 # > 天书乱谈
-http-response ^https:\/\/[a-z]+\.tslt\.xyz\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_251
+http-response ^https:\/\/[a-z]+\.tslt\.xyz\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=天书乱谈
 
-http-response ^https:\/\/b\.tslt\.xyz\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_252
+http-response ^https:\/\/b\.tslt\.xyz\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=天书乱谈1
 
 # > 天泽百宝箱
-http-response ^https:\/\/(c|a)\.jxjt888\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_254
+http-response ^https:\/\/(c|a)\.jxjt888\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=天泽百宝箱
 
 # > 图层黑科技
-http-response ^https:\/\/m\.xgjyouhui\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_256
+http-response ^https:\/\/m\.xgjyouhui\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=图层黑科技
 
 # > T3出行 微信小程序净化
-http-response ^https:\/\/passenger\.t3go\.cn\/(solution\-|common\-)?(passenger\-)?(activity\-|app\-)?api\/notoken\/(trip\/)?api\/(home\/|common\/)?(v[1-3]\/)?(ad\/getNegativescreen|solution\/passenger\/open\/getHomeMenu|leftmenu|getHomeInfoGlobal) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/T3.js, requires-body=true, timeout=60 ,tag=T3_258
+http-response ^https:\/\/passenger\.t3go\.cn\/(solution\-|common\-)?(passenger\-)?(activity\-|app\-)?api\/notoken\/(trip\/)?api\/(home\/|common\/)?(v[1-3]\/)?(ad\/getNegativescreen|solution\/passenger\/open\/getHomeMenu|leftmenu|getHomeInfoGlobal) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/T3.js, requires-body=true, timeout=60 ,tag=T3ChuXing
 
-http-response ^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/xiaotucc.js, requires-body=true, timeout=60 ,tag=xiaotucc_274
+http-response ^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/xiaotucc.js, requires-body=true, timeout=60 ,tag=T3出行
 
 # > 小纸箱助手
-http-response ^https:\/\/xcx\.xianbaow\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_276
+http-response ^https:\/\/xcx\.xianbaow\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=小纸箱助手
 
 # > 小野分享
-http-response ^https:\/\/lysl2020\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_278
+http-response ^https:\/\/lysl2020\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=小野分享
 
 # > 小打卡
-http-response ^https?:\/\/uranus\.sharedaka\.com\/api\/v3\/user\/info\/get script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/xiaodaka.js, requires-body=true, timeout=60 ,tag=xiaodaka_280
+http-response ^https?:\/\/uranus\.sharedaka\.com\/api\/v3\/user\/info\/get script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/xiaodaka.js, requires-body=true, timeout=60 ,tag=小打卡
 
 # > 喜茶 微信小程序净化
-http-response ^https:\/\/go\.heytea\.com\/api\/service-portal\/vip script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/heytea.js, requires-body=true, timeout=60 ,tag=heytea_286
+http-response ^https:\/\/go\.heytea\.com\/api\/service-portal\/vip script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/heytea.js, requires-body=true, timeout=60 ,tag=喜茶
 
 # > 搜罗好货
-http-response ^https?:\/\/wp3\.lobdol\.cn\/wp-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_288
+http-response ^https?:\/\/wp3\.lobdol\.cn\/wp-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js, requires-body=true, timeout=60 ,tag=搜罗好货
 
-http-response ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/13012\/getWaterflowInfo script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/T3.js, requires-body=true, timeout=60 ,tag=T3_294
+http-response ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/13012\/getWaterflowInfo script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/T3.js, requires-body=true, timeout=60 ,tag=T3
 
-http-response ^https:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7 script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/yx.js, requires-body=true, timeout=60 ,tag=yx_302
+http-response ^https:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7 script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/yx.js, requires-body=true, timeout=60 ,tag=Yx
 
 # > 一点点 微信小程序净化
-http-response ^https:\/\/cappapi\.alittle-tea\.com\/open\?method=catering\.set\.ad script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/alittle-tea.js, requires-body=true, timeout=60 ,tag=alittle-tea_304
+http-response ^https:\/\/cappapi\.alittle-tea\.com\/open\?method=catering\.set\.ad script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/alittle-tea.js, requires-body=true, timeout=60 ,tag=一点点
 
 # > 掌上公交
-http-response ^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/zhangshanggongjiao.js, requires-body=true, timeout=60 ,tag=zhangshanggongjiao_313
+http-response ^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/zhangshanggongjiao.js, requires-body=true, timeout=60 ,tag=掌上公交
 
 # > 扎比科技资源箱 弹框显示内容
-http-response ^https:\/\/jabi\.coding\.net\/p\/xcx\/d\/xcx\/git\/raw\/master\/jabikj\.json script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/jabi.js, requires-body=true, timeout=60 ,tag=jabi_315
+http-response ^https:\/\/jabi\.coding\.net\/p\/xcx\/d\/xcx\/git\/raw\/master\/jabikj\.json script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/jabi.js, requires-body=true, timeout=60 ,tag=扎比科技资源箱
 
 [MITM]
 
