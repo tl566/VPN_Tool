@@ -1,0 +1,14 @@
+#!name= 哔哩哔哩繁体CC字幕转中文简体
+#!desc= 繁体CC字幕转中文简体
+#!author= Jard1n
+#!homepage= https://github.com/Jard1n/Loon
+#!icon= https://raw.githubusercontent.com/deezertidal/private/main/icons/bili.png
+
+
+[mitm]
+hostname = aisubtitle.hdslb.com,i0.hdslb.com
+
+
+[script]
+# > 哔哩哔哩繁体CC字幕转中文简体（2023-04-11）@ddgksf2013
+http-response ^https?:\/\/.*\.hdslb\.com\/bfs\/subtitle\/.+\.json script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_cc.js, requires-body=true, timeout=60, tag=繁体CC字幕转中文简体
