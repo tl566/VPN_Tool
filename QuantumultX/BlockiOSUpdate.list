@@ -1,3 +1,4 @@
+# 分流作用：屏蔽苹果系统更新
 host, ns.itunes.apple.com, reject
 host, appldnld.apple.com, reject
 host, mesu.apple.com, reject
