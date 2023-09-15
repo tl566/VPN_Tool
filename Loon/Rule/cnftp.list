@@ -163,8 +163,3 @@ DOMAIN, sdk-conf.getui.com, REJECT
 DOMAIN, sdk.open.talk.getui.net, REJECT
 DOMAIN, switch.cup.com.cn, REJECT
 DOMAIN, tysdk.95516.com, REJECT
-
-
-# 字节跳动
-DOMAIN, ad.zijieapi.com, REJECT
-DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
