@@ -57,6 +57,7 @@ DOMAIN, info6.video.qq.com, REJECT
 DOMAIN, ios.video.mpush.qq.com, REJECT
 DOMAIN, mtrace.qq.com, REJECT
 DOMAIN, pgdt.gtimg.cn, REJECT
+DOMAIN, vv.video.qq.com, REJECT
 URL-REGEX, ^http:\/\/[0-9\.:]*\/?(defaultts|vmind\.qqvideo)\.tc\.qq\.com\/\w+, REJECT
 URL-REGEX, ^http:\/\/apd-vlive\.apdcdn\.tc\.qq\.com\/vmind\.qqvideo\.tc\.qq\.com\/\w+, REJECT
 URL-REGEX, ^http:\/\/apd-\w+\.v\.smtcdns\.com\/(defaultts|omts|varietyts|vmind\.qqvideo)\.tc\.qq\.com\/\w+, REJECT
