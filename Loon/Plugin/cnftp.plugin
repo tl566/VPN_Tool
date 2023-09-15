@@ -13,16 +13,16 @@
 
 # 芒果tv
 # 首页,左上角推广,信息流,底部菜单红点,顶部菜单,搜索框
-^http:\/\/[0-9\.]+\/odin\/c1\/(channel\/ads|skin\/config)\? - reject-dict
+URL-REGEX, ^http:\/\/[0-9\.]+\/odin\/c1\/(channel\/ads|skin\/config)\? - reject-dict
 ^http:\/\/mobileso\.bz\.mgtv\.com\/spotlight\/search\/v1\? - reject-dict
 ^https:\/\/damang\.api\.mgtv\.com\/station\/album\/red\/dot\? - reject-dict
 # 升级弹窗
 ^https:\/\/mobile\.api\.mgtv\.com\/v2\/mobile\/checkUpdate\? - reject-dict
 
 # 腾讯视频
-^http:\/\/[0-9\.:]*\/?(defaultts|vmind\.qqvideo)\.tc\.qq\.com\/\w+ - reject
-^http:\/\/apd-vlive\.apdcdn\.tc\.qq\.com\/vmind\.qqvideo\.tc\.qq\.com\/\w+ - reject
-^http:\/\/apd-\w+\.v\.smtcdns\.com\/(defaultts|omts|varietyts|vmind\.qqvideo)\.tc\.qq\.com\/\w+ - reject
+URL-REGEX, ^http:\/\/[0-9\.:]*\/?(defaultts|vmind\.qqvideo)\.tc\.qq\.com\/\w+ - reject
+URL-REGEX, ^http:\/\/apd-vlive\.apdcdn\.tc\.qq\.com\/vmind\.qqvideo\.tc\.qq\.com\/\w+ - reject
+URL-REGEX, ^http:\/\/apd-\w+\.v\.smtcdns\.com\/(defaultts|omts|varietyts|vmind\.qqvideo)\.tc\.qq\.com\/\w+ - reject
 
 # 优酷播放页,主演陪你看,弹窗动图
 ^https:\/\/acs\.youku\.com\/gw\/mtop\.youku\.(pisp\.scripts\.get|xspace\.play\.position\.preload\.query|xspace\.poplayer\.position\.query) - reject-dict
