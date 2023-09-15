@@ -122,7 +122,7 @@ DOMAIN, info6.video.qq.com, REJECT
 DOMAIN, ios.video.mpush.qq.com, REJECT
 DOMAIN, mtrace.qq.com, REJECT
 DOMAIN, pgdt.gtimg.cn, REJECT
-DOMAIN, vv.video.qq.com, REJECT
+#DOMAIN, vv.video.qq.com, REJECT
 
 # ======= W ======= #
 # 网上国网
