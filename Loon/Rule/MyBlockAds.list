@@ -3,8 +3,6 @@
 # ======= A ======= #
 # 阿里云
 IP-CIDR, 203.107.1.1/24, REJECT
-# 爱奇艺
-DOMAIN, api.iqiyi.com, REJECT
 # Apple
 DOMAIN, advertising.apple.com, REJECT
 DOMAIN, api-adservices.apple.com, REJECT
@@ -76,19 +74,6 @@ DOMAIN, tmeadcomm.y.qq.com, REJECT
 DOMAIN, statics.woozooo.com, REJECT
 
 # ======= M ======= #
-# 芒果TV
-DOMAIN, dflow.bz.mgtv.com, REJECT
-DOMAIN, encounter.bz.mgtv.com, REJECT
-DOMAIN, floor.bz.mgtv.com, REJECT
-DOMAIN, img.da.mgtv.com, REJECT
-DOMAIN, layer.bz.mgtv.com, REJECT
-DOMAIN, mob.bz.mgtv.com, REJECT
-DOMAIN, mobile.da.mgtv.com, REJECT
-DOMAIN, rc-topic-api.bz.mgtv.com, REJECT
-DOMAIN, v2.da.mgtv.com, REJECT
-DOMAIN, video.da.mgtv.com, REJECT
-DOMAIN, vip.bz.mgtv.com, REJECT
-DOMAIN, ys.da.mgtv.com, REJECT
 # 美团
 DOMAIN, al-log.d.meituan.net, REJECT
 DOMAIN, babel-statistics-android.d.meituan.net, REJECT
@@ -114,15 +99,6 @@ DOMAIN, swallowcrockerybless.com, REJECT
 # ======= T ======= #
 # 腾讯 无法使用的推送服务
 DOMAIN, tpns.qq.com, REJECT
-# 腾讯视频
-DOMAIN, adsmind.gdtimg.com, REJECT
-DOMAIN, btrace.qq.com, REJECT
-DOMAIN, info4.video.qq.com, REJECT
-DOMAIN, info6.video.qq.com, REJECT
-DOMAIN, ios.video.mpush.qq.com, REJECT
-DOMAIN, mtrace.qq.com, REJECT
-DOMAIN, pgdt.gtimg.cn, REJECT
-#DOMAIN, vv.video.qq.com, REJECT
 
 # ======= W ======= #
 # 网上国网
@@ -142,20 +118,6 @@ HOST-SUFFIX, 163jiasu.com, REJECT
 ;DOMAIN, hub5idx.v6.shub.sandai.net, REJECT
 
 # ======= Y ======= #
-# 优酷 & 菜鸟
-DOMAIN, adsmind.ugdtimg.com, REJECT
-DOMAIN, amdc.m.youku.com, REJECT
-DOMAIN, apiv4-iyes.youku.com, REJECT
-DOMAIN, httpdns.alicdn.com, REJECT
-DOMAIN, huichuan-mc.sm.cn, REJECT
-DOMAIN, huichuan.sm.cn, REJECT
-DOMAIN, iyes.youku.com, REJECT
-DOMAIN, m-vali.cp31.ott.cibntv.net, REJECT
-DOMAIN, mc.atm.youku.com, REJECT
-DOMAIN, vali-g1.cp31.ott.cibntv.net, REJECT
-DOMAIN, vali-ugc.cp31.ott.cibntv.net, REJECT
-DOMAIN, yk-ssp.ad.youku.com, REJECT
-DOMAIN, ykad-data.youku.com, REJECT
 # 云闪付 开屏广告
 DOMAIN, ads.95516.com, REJECT
 DOMAIN, cm-10-138.getui.com, REJECT
