@@ -6,11 +6,57 @@
 
 
 [Rule]
+# 爱奇艺
+# 放行地址
+DOMAIN-SUFFIX, cupid.iqiyi.com, DIRECT
+# 拦截地址
+DOMAIN, api.iqiyi.com, REJECT
+
+# 芒果tv
+DOMAIN, dflow.bz.mgtv.com, REJECT
+DOMAIN, encounter.bz.mgtv.com, REJECT
+DOMAIN, floor.bz.mgtv.com, REJECT
+DOMAIN, img.da.mgtv.com, REJECT
+DOMAIN, layer.bz.mgtv.com, REJECT
+DOMAIN, mob.bz.mgtv.com, REJECT
+DOMAIN, mobile.da.mgtv.com, REJECT
+DOMAIN, rc-topic-api.bz.mgtv.com, REJECT
+DOMAIN, v2.da.mgtv.com, REJECT
+DOMAIN, video.da.mgtv.com, REJECT
+DOMAIN, vip.bz.mgtv.com, REJECT
+DOMAIN, ys.da.mgtv.com, REJECT
 # 芒果tv首页 - 左上角推广、信息流、底部菜单红点、顶部菜单、搜索框
 URL-REGEX, ^http:\/\/[0-9\.]+\/odin\/c1\/(channel\/ads|skin\/config)\?, REJECT-DICT
 URL-REGEX, ^http:\/\/mobileso\.bz\.mgtv\.com\/spotlight\/search\/v1\?, REJECT-DICT
 
+# 优酷
+# 放行地址
+DOMAIN, push.m.youku.com, DIRECT
+DOMAIN, un-acs.youku.com, DIRECT
+DOMAIN, dorangesource.alicdn.com, DIRECT
+# 拦截地址
+DOMAIN, adsmind.ugdtimg.com, REJECT
+DOMAIN, amdc.m.youku.com, REJECT
+DOMAIN, apiv4-iyes.youku.com, REJECT
+DOMAIN, httpdns.alicdn.com, REJECT
+DOMAIN, huichuan-mc.sm.cn, REJECT
+DOMAIN, huichuan.sm.cn, REJECT
+DOMAIN, iyes.youku.com, REJECT
+DOMAIN, m-vali.cp31.ott.cibntv.net, REJECT
+DOMAIN, mc.atm.youku.com, REJECT
+DOMAIN, vali-g1.cp31.ott.cibntv.net, REJECT
+DOMAIN, vali-ugc.cp31.ott.cibntv.net, REJECT
+DOMAIN, yk-ssp.ad.youku.com, REJECT
+DOMAIN, ykad-data.youku.com, REJECT
+
 # 腾讯视频
+DOMAIN, adsmind.gdtimg.com, REJECT
+DOMAIN, btrace.qq.com, REJECT
+DOMAIN, info4.video.qq.com, REJECT
+DOMAIN, info6.video.qq.com, REJECT
+DOMAIN, ios.video.mpush.qq.com, REJECT
+DOMAIN, mtrace.qq.com, REJECT
+DOMAIN, pgdt.gtimg.cn, REJECT
 URL-REGEX, ^http:\/\/[0-9\.:]*\/?(defaultts|vmind\.qqvideo)\.tc\.qq\.com\/\w+, REJECT
 URL-REGEX, ^http:\/\/apd-vlive\.apdcdn\.tc\.qq\.com\/vmind\.qqvideo\.tc\.qq\.com\/\w+, REJECT
 URL-REGEX, ^http:\/\/apd-\w+\.v\.smtcdns\.com\/(defaultts|omts|varietyts|vmind\.qqvideo)\.tc\.qq\.com\/\w+, REJECT
