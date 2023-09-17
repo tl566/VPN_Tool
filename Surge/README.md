@@ -1,6 +1,8 @@
 自用配置
 
-官方教程：https://wiki.surge.community
+Surge官方中文指引：https://manual.nssurge.com/book/understanding-surge/cn/
+
+Surge入门教程：https://wiki.surge.community
 
 DivineEngine教程：https://divineengine.net/more/special/surge/
 
