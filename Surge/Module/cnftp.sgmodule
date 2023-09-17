@@ -123,6 +123,8 @@ DOMAIN, trace.qq.com, REJECT
 ^https:\/\/damang\.api\.mgtv\.com\/station\/album\/red\/dot\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 升级弹窗
 ^https:\/\/mobile\.api\.mgtv\.com\/v2\/mobile\/checkUpdate\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+# 优酷
 # 播放页,主演陪你看,弹窗动图
 ^https:\/\/acs\.youku\.com\/gw\/mtop\.youku\.(pisp\.scripts\.get|xspace\.play\.position\.preload\.query|xspace\.poplayer\.position\.query) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
