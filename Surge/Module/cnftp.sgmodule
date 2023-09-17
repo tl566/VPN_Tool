@@ -55,7 +55,7 @@ DOMAIN, mtrace.qq.com, REJECT
 DOMAIN, p.l.qq.com, REJECT
 DOMAIN, pgdt.gtimg.cn, REJECT
 DOMAIN, rpt.gdt.qq.com, REJECT
-DOMAIN, trace.qq.com, REJECT
+DOMAIN-SUFFIX, trace.qq.com, REJECT
 
 
 [URL Rewrite]
