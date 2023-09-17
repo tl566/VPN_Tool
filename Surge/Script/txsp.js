@@ -4,8 +4,8 @@ if (type === "iacc") {
    size > 1200 ? $done() : $done({});
 } else if (type === "vv") {
    const body = $request.body
-      .split("&")
-      .filter((param) => !["spadseg", "adversion", "adchid", "adpass"].includes(param.split("=")[0]))
-      .join("&");
+      。split("&")
+      。filter((param) => !["spadseg", "adversion", "adchid", "adpass"].includes(param.split("=")[0]))
+      。join("&");
    $done({ body: body });
 }
