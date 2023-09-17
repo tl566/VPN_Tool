@@ -2,18 +2,31 @@
 #!desc= 自用APP解锁合集
 
 
+[Map Local]
+# 彩云天气
+^https:\/\/api\.caiyunapp\.com\/v1\/activity\? data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/reject-dict.json"
+^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/reject-dict.json"
+
+# 移除公众号中的推广内容
+^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
 
 
 
+[Script]
 # BiliBili_哔哩哔哩画质
 哔哩哔哩番剧开启1080P+ = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,timeout=10,script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/backup/bilifj.js,script-update-interval=0
 
 # 哔哩哔哩繁体CC字幕转中文简体（2023-04-11）@ddgksf2013
 bilibili_cc = type=http-response, pattern=^https?:\/\/.*\.hdslb\.com\/bfs\/subtitle\/.+\.json, requires-body=true, max-size=3145728, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_cc.js, timeout=60, script-update-interval=0
 
+# 彩云天气 biz.cyapi.cn, wrapper.cyapi.cn
+彩云天气 = type=http-response,pattern=^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
+
+#微信公众号去广告 mp.weixin.qq.com
+微信公众号去广告 = type=http-response, pattern=http-response, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Weixin/Weixin_Official_Accounts_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
 
 
 
 [MITM]
-hostname = %APPEND% app.bilibili.com, aisubtitle.hdslb.com,i0.hdslb.com
+hostname = %APPEND% app.bilibili.com, aisubtitle.hdslb.com,i0.hdslb.com, biz.cyapi.cn, wrapper.cyapi.cn, mp.weixin.qq.com
