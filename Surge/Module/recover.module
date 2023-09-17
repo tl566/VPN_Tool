@@ -1,0 +1,7 @@
+﻿#!name=keep yfamily
+#!desc=保持yfamily.ml的远程资源有效性
+
+[URL Rewrite]
+^https:\/\/yfamily\.ml/(.*)$ https://yfamily.vercel.app/$1 302
+[MITM]
+hostname = %APPEND% yfamily.*
