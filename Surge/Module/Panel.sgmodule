@@ -3,6 +3,10 @@
 #!system=ios
 
 
+[Rule]
+DOMAIN-SUFFIX,ip-api.com,Proxy
+
+
 [Host]
 ip-api.com = 208.95.112.1
 
