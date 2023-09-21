@@ -3,7 +3,13 @@
 #!author = Jard1n
 
 
+[General]
+force-http-engine-hosts = %APPEND% kjp.cupid.iqiyi.com,t7z.cupid.iqiyi.com
+
+
 [Rule]
+URL-REGEX,^http:\/\/[0-9.]+(\:80)?\/amdc\/mobileDispatch$,REJECT
+
 # 爱奇艺
 # 放行地址
 DOMAIN-SUFFIX, cupid.iqiyi.com, DIRECT
