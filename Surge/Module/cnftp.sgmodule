@@ -17,6 +17,9 @@ DOMAIN-SUFFIX, cupid.iqiyi.com, DIRECT
 DOMAIN, api.iqiyi.com, REJECT
 
 # 芒果TV
+DOMAIN, credits.bz.mgtv.com, REJECT
+DOMAIN, credits2.bz.mgtv.com, REJECT
+DOMAIN, credits3.bz.mgtv.com, REJECT
 DOMAIN, dflow.bz.mgtv.com, REJECT
 DOMAIN, encounter.bz.mgtv.com, REJECT
 DOMAIN, floor.bz.mgtv.com, REJECT
