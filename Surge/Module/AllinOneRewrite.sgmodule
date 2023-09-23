@@ -47,12 +47,9 @@ WPS会员 = type=http-response, pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\
 # iScreen小组件-辅助解锁 非一次性解锁
 #iscreen辅助 = type=http-response,pattern=^https?:\/\/cs\.kuso\.xyz\/configs.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iscreenfz.js
 
-# TopWidgets万能小组件
-万能小组件 = type=http-response,pattern=^https?:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js
 
-# iTunes解锁系列
-# hostname = buy.itunes.apple.com
-iTunes = type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
+
+
 
 [MITM]
-hostname = %APPEND% app.bilibili.com, aisubtitle.hdslb.com,i0.hdslb.com, biz.cyapi.cn, wrapper.cyapi.cn, mp.weixin.qq.com, appwk.baidu.com, weixin110.qq.com,security.wechat.co, *.docer.wps.cn,vipapi.wps.cn,account.wps.cn,*account.wps.com, *.aliyundrive.com, *.alipan.com, *.kuso.xyz, top-widgets-api.xiaozujian.com, buy.itunes.apple.com 
+hostname = %APPEND% app.bilibili.com, aisubtitle.hdslb.com,i0.hdslb.com, biz.cyapi.cn, wrapper.cyapi.cn, mp.weixin.qq.com, appwk.baidu.com, weixin110.qq.com,security.wechat.co, *.docer.wps.cn,vipapi.wps.cn,account.wps.cn,*account.wps.com, *.aliyundrive.com, *.alipan.com, *.kuso.xyz
