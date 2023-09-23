@@ -1,5 +1,5 @@
 #!name=AllinOneRewrite
-#!desc= 自用APP解锁合集
+#!desc= 自用规则和APP解锁合集
 
 
 [Rule]
@@ -32,6 +32,9 @@ DOMAIN,adshows.21cn.com,REJECT
 
 
 [Script]
+# 广告联盟去广告
+广告联盟json = type=http-response,pattern=^https:\/\/((api-access\.pangolin-sdk-toutiao|is\.snssdk)\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/adsense.js
+
 # BiliBili_哔哩哔哩画质
 BiliBili1080P=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,requires-body=1,script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
 
@@ -68,4 +71,4 @@ WPS会员 = type=http-response, pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\
 
 
 [MITM]
-hostname = %APPEND% app.bilibili.com, aisubtitle.hdslb.com,i0.hdslb.com, biz.cyapi.cn, wrapper.cyapi.cn, mp.weixin.qq.com, appwk.baidu.com, weixin110.qq.com,security.wechat.co, *.docer.wps.cn,vipapi.wps.cn,account.wps.cn,*account.wps.com, *.aliyundrive.com, *.alipan.com, *.kuso.xyz
+hostname = %APPEND% api-access.pangolin-sdk-toutiao.com, is.snssdk.com, mi.gdt.qq.com, open.e.kuaishou.com, app.bilibili.com, aisubtitle.hdslb.com,i0.hdslb.com, biz.cyapi.cn, wrapper.cyapi.cn, mp.weixin.qq.com, appwk.baidu.com, weixin110.qq.com,security.wechat.co, *.docer.wps.cn,vipapi.wps.cn,account.wps.cn,*account.wps.com, *.aliyundrive.com, *.alipan.com, *.kuso.xyz
