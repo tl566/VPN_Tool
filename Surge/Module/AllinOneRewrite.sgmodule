@@ -2,6 +2,19 @@
 #!desc= 自用APP解锁合集
 
 
+[Rule]
+# Safari 防跳转
+DOMAIN,app-site-association.cdn-apple.com,REJECT
+
+# 中国联通去开屏
+DOMAIN-SUFFIX,m1.ad.10010.com,REJECT
+# 中国电信去开屏
+DOMAIN,ad.21cn.com,REJECT
+DOMAIN,ad.k.21cn.com,REJECT
+DOMAIN,admarket.21cn.com,REJECT
+DOMAIN,adshows.21cn.com,REJECT
+
+
 [Map Local]
 # 百度 纯净搜索
 ^https?:\/\/(www|m)\.baidu\.com\/?($|\?(from=\w{8,9}|tn=&from=)) data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/baidu.html" header="Content-Type: text/html; charset=utf-8"
