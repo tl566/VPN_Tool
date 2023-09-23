@@ -54,7 +54,7 @@ DOMAIN, yk-ssp.ad.youku.com, REJECT
 DOMAIN, ykad-data.youku.com, REJECT
 
 # 腾讯视频
-IP-CIDR,47.110.187.87/32,REJECT
+IP-CIDR,47.110.187.87/32,no-resolve,REJECT
 OR,((DOMAIN,pgdt.gtimg.cn), (AND,((USER-AGENT,live4iphoneRel*), (IP-CIDR,0.0.0.0/0,no-resolve)))),REJECT-DROP
 DOMAIN, adsmind.gdtimg.com,REJECT
 DOMAIN, btrace.qq.com,REJECT
