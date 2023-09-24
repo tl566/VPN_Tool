@@ -38,6 +38,11 @@ URL-REGEX,^https:\/\/m\.360buyimg\.com\/mobilecms\/s\d{4}x\d{4},REJECT
 # 移除公众号中的推广内容
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
+# spotify
+^https?://spclient.wg.spotify.com/(ad-logic|ads|.+ad_slot|.+banners|.+canvases|.+cards|.+crashlytics|.+doubleclick.net|.+enabled-tracks|.+promoted_offer) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+
+^https?:\/\/api\d?\.musical\.ly\/api\/ad\/ data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+
 # iScreen小组件-辅助解锁
 ^https?:\/\/pay\.kuso\.xyz\/pay\/pay-check data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
 
@@ -62,6 +67,10 @@ BiliBili1080P=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/
 
 # 哔哩哔哩繁体CC字幕转中文简体（2023-04-11）@ddgksf2013
 bilibili_cc = type=http-response, pattern=^https?:\/\/.*\.hdslb\.com\/bfs\/subtitle\/.+\.json, requires-body=true, max-size=3145728, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_cc.js, timeout=60, script-update-interval=0
+
+# Spotify解锁
+spotify-json = type=http-request,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
 
 # 彩云天气 biz.cyapi.cn, wrapper.cyapi.cn
 彩云天气 = type=http-response,pattern=^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
@@ -94,4 +103,4 @@ WPS会员 = type=http-response, pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\
 
 
 [MITM]
-hostname = %APPEND% api-access.pangolin-sdk-toutiao.com, is.snssdk.com, mi.gdt.qq.com, open.e.kuaishou.com, app.bilibili.com, aisubtitle.hdslb.com,i0.hdslb.com, biz.cyapi.cn, wrapper.cyapi.cn, mp.weixin.qq.com, appwk.baidu.com, weixin110.qq.com,security.wechat.co, *.docer.wps.cn,vipapi.wps.cn,account.wps.cn,*account.wps.com, *.aliyundrive.com, *.alipan.com, *.kuso.xyz, gw.alicdn.com, acs.m.taobao.com, m.qianbao.qq.com, boxer.baidu.com 
+hostname = %APPEND% api-access.pangolin-sdk-toutiao.com, is.snssdk.com, mi.gdt.qq.com, open.e.kuaishou.com, app.bilibili.com, aisubtitle.hdslb.com,i0.hdslb.com, spclient.wg.spotify.com, biz.cyapi.cn, wrapper.cyapi.cn, mp.weixin.qq.com, appwk.baidu.com, weixin110.qq.com,security.wechat.co, *.docer.wps.cn,vipapi.wps.cn,account.wps.cn,*account.wps.com, *.aliyundrive.com, *.alipan.com, *.kuso.xyz, gw.alicdn.com, acs.m.taobao.com, m.qianbao.qq.com, boxer.baidu.com 
