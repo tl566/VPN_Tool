@@ -1,5 +1,5 @@
 #!name = 开屏广告过滤器
-#!desc = 过滤部分主流应用的开屏广告[2023/04/15]
+#!desc = 过滤部分主流应用的开屏广告
 
 
 [URL Rewrite]
@@ -431,6 +431,7 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do - reject
 ^https?:\/\/gd\.10086\.cn\/gmccapp\/serv\/\?servicename=GMCCAPP_704_002_001_001 - reject
 
 
+
 [Script]
 # > 12306
 12306_467 = type=http-request, pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList, script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js, requires-body=true, max-size=3145728, timeout=30
@@ -458,10 +459,12 @@ iqiyi_open_ads_481 = type=http-response, pattern=^https?:\/\/.*cupid\.iqiyi\.com
 
 # > jingxi
 startup_483 = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show, script-path=https://github.com/ddgksf2013/Scripts/raw/master/startup.js, requires-body=true, max-size=3145728, timeout=30, argument = "cm-pop-up-banners->ddgksf2013"
+
 jd_json_484 = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(hotWords|hotSearchTerms), script-path=https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js, requires-body=true, max-size=3145728, timeout=30, argument = "cm-pop-up-banners->ddgksf2013"
 
 # > jingdonglite
 replace-body_486 = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/CommonScript/replace-body.js, requires-body=true, max-size=3145728, timeout=30, argument = "jdLiteAdvertisingVO->ddgksf2013"
+
 replace-body_487 = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/CommonScript/replace-body.js, requires-body=true, max-size=3145728, timeout=30, argument = "pushData->ddgksf2013"
 
 # > ku'an
@@ -469,6 +472,7 @@ coolapk_489 = type=http-response, pattern=^https?:\/\/api\.coolapk\.com\/v6\/(fe
 
 # > spotify pro
 spotify-proto_491 = type=http-response, pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, max-size=3145728, binary-body-mode=true, timeout=30, argument = "pushData->ddgksf2013"
+
 shunfeng_json_492 = type=http-response, pattern=https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow, script-path=https://github.com/ddgksf2013/Scripts/raw/master/shunfeng_json.js, requires-body=true, max-size=3145728, timeout=30, argument = "pushData->ddgksf2013"
 
 # > Stay
@@ -487,22 +491,28 @@ replace-body_501 = type=http-response, pattern=^https?:\/\/lcen\.xiaote\.net\/ap
 zhihu_openads_503 = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/commercial_api.*launch_v2, script-path=https://github.com/ddgksf2013/Scripts/raw/master/zhihu_openads.js, requires-body=true, max-size=3145728, timeout=30, argument = "screenSplashAd->ddgksf2013"
 
 
+
 [Map Local]
 # > echongdian
 ^https?:\/\/cdn-evone-ceph\.echargenet\.com\/gw-emas-cdn\/63c4e3b558bb610008969f89 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
 
 # > hupu
 ^https?:\/\/i\d\.hoopchina\.com\.cn/blogfile\//d+\//d+\/BbsImg\.(?<=(big.(png|jpg)))$ data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+
 ^https?:\/\/games\.mobileapi\.hupu\.com\/.+\/(search|interfaceAdMonitor|status|hupuBbsPm)/(hotkey|init|hupuBbsPm)\. data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+
 ^https?:\/\/games\.mobileapi\.hupu\.com\/interfaceAdMonitor data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+
 ^https?:\/\/i1\.hoopchina\.com\.cn\/blogfile\/.+_\d{3}x\d{4} data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
 
 # > jingdongdushu
 ^https?:\/\/jdread-api\.jd\.com\/jdread\/api\/channel\/module\/opens data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
 ^https?:\/\/jdread-api\.jd\.com\/jdread\/api\/popup data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
 
 # > jingdong
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(start|queryMaterialAdverts) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
 
 # > jingdongjinrong
@@ -513,6 +523,7 @@ zhihu_openads_503 = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/com
 
 # > jianxun
 ^https?:\/\/api\.tipsoon\.com\/api\/v\d\/top\/ad data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
 ^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
 # > kuake
@@ -526,10 +537,12 @@ zhihu_openads_503 = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/com
 
 # > spotify
 ^https?://spclient.wg.spotify.com/(ad-logic|ads|.+ad_slot|.+banners|.+canvases|.+cards|.+crashlytics|.+doubleclick.net|.+enabled-tracks|.+promoted_offer) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+
 ^https?:\/\/api\d?\.musical\.ly\/api\/ad\/ data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
 
 # > zhongguoyinhang
 ^https?:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+
 
 
 [MITM]
