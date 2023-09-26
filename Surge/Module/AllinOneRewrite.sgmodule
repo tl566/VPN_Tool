@@ -7,9 +7,6 @@
 DOMAIN-SUFFIX, doubleclick-cn.net, REJECT
 DOMAIN-SUFFIX, doubleclick.net, REJECT
 
-# 阿里系应用弹窗版本过低
-DOMAIN, bixi.alicdn.com, REJECT
-
 # 中国联通去开屏
 DOMAIN-SUFFIX,m1.ad.10010.com,REJECT
 
