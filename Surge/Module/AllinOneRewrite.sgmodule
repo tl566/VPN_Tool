@@ -3,9 +3,6 @@
 
 
 [Rule]
-# Safari 防跳转
-#DOMAIN,app-site-association.cdn-apple.com,REJECT
-
 # 通用广告
 DOMAIN-SUFFIX, doubleclick-cn.net, REJECT
 DOMAIN-SUFFIX, doubleclick.net, REJECT
