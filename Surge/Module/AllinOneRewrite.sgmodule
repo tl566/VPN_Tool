@@ -4,7 +4,7 @@
 
 [Rule]
 # Safari 防跳转
-DOMAIN,app-site-association.cdn-apple.com,REJECT
+#DOMAIN,app-site-association.cdn-apple.com,REJECT
 
 # 通用广告
 DOMAIN-SUFFIX, doubleclick-cn.net, REJECT
@@ -98,8 +98,7 @@ WPS会员 = type=http-response, pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\
 #iscreen辅助 = type=http-response,pattern=^https?:\/\/cs\.kuso\.xyz\/configs.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iscreenfz.js
 
 # 百度防跳转
-百度搜索防跳转 = type=http-response,pattern=^https?\:\/\/boxer\.baidu\.com\/scheme,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js
-
+百度搜索防跳转 = type=http-response, pattern=^https?:\/\/boxer\.baidu\.com\/scheme\?scheme, script-path=https://gitlab.com/RuCu6/QuanX/-/raw/main/Scripts/baidu/baiduNoRedirect.js
 
 
 [MITM]
