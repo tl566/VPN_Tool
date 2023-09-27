@@ -120,7 +120,7 @@
 ^https:\/\/duckduckgo.com\/\?q=sg&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143464&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc= 302
 
 #>>>>>>>>>>>>>>>>>>>>>>>搜索
-# bd  xxx (谷歌搜索)
+# bd  xxx (Google搜索)
 ^https:\/\/duckduckgo.com\/\?q=gg\+([^&]+).+ https://www.google.com/search?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+gg.+ https://www.google.com/search?q=$1 302
 # wk  xxx (维基搜索)
@@ -132,7 +132,7 @@
 # yh  xxx (油猴搜索)
 ^https:\/\/duckduckgo.com\/\?q=yh\+([^&]+).+ https://greasyfork.org/zh-CN/scripts?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+yh.+ https://greasyfork.org/zh-CN/scripts?q=$1  302
-# gi  xxx (Google 图片)
+# gi  xxx (Google图片)
 ^https:\/\/duckduckgo.com\/\?q=gi\+([^&]+).+ https://www.google.com/search?&tbm=isch&q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+gi.+ https://www.google.com/search?&tbm=isch&q=$1 302
 # by  xxx (必应)
