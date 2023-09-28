@@ -29,6 +29,10 @@ DOMAIN-SUFFIX, trace.qq.com, REJECT
 ^http:\/\/apd-\w+\.v\.smtcdns\.com\/(defaultts|omts|vmind\.qqvideo)\.tc\.qq\.com\/\w+ - reject
 
 
+[Script]
+腾讯视频 = type=http-request, pattern=^https?:\/\/vv\.video\.qq\.com\/getvinfo, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, timeout=60, argument="%26sppreviewtype%3D%5Cd(.*)%26spsrt%3D%5Cd->%26sppreviewtype%3D0%241%26spsrt%3D0"
+
+
 [Map Local]
 ^https?:\/\/vv\.video\.qq\.com\/(diff|get)vmind data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
