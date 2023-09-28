@@ -53,7 +53,6 @@ DOMAIN, ykad-data.youku.com, REJECT
 
 # 腾讯视频
 OR,((DOMAIN,pgdt.gtimg.cn), (AND,((USER-AGENT,live4iphoneRel*), (IP-CIDR,0.0.0.0/0,no-resolve)))),REJECT-DROP
-AND,((PROTOCOL,HTTPS), (DOMAIN,iacc.qq.com)),REJECT-NO-DROP
 DOMAIN, config.ab.qq.com, REJECT
 DOMAIN, adsmind.gdtimg.com, REJECT
 DOMAIN, btrace.qq.com, REJECT
