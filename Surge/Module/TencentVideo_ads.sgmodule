@@ -1,14 +1,37 @@
 #!name=腾讯视频净化
-#!desc=去视频、开屏、广告 删app重装
+#!desc=去除腾讯视频的开屏广告
 
 
 [Rule]
 OR,((DOMAIN,pgdt.gtimg.cn), (AND,((USER-AGENT,live4iphoneRel*), (IP-CIDR,0.0.0.0/0,no-resolve)))),REJECT-DROP
-DOMAIN,config.ab.qq.com,REJECT
-DOMAIN,content.rconfig.qq.com,REJECT
+DOMAIN, config.ab.qq.com, REJECT
+DOMAIN, adsmind.gdtimg.com, REJECT
+DOMAIN, btrace.qq.com, REJECT
+DOMAIN, btrace.video.qq.com, REJECT
+DOMAIN, info4.video.qq.com, REJECT
+DOMAIN, info6.video.qq.com, REJECT
+DOMAIN, ios.video.mpush.qq.com, REJECT
+DOMAIN, mtrace.qq.com, REJECT
+DOMAIN, otheve.beacon.qq.com, REJECT
+DOMAIN, p.l.qq.com, REJECT
+DOMAIN, pgdt.gtimg.cn, REJECT
+DOMAIN, rpt.gdt.qq.com, REJECT
+DOMAIN, tpns.qq.com, REJECT
+DOMAIN, tytx.m.cn.miaozhen.com, REJECT
+DOMAIN, vv6.video.qq.com, REJECT
+DOMAIN-SUFFIX, trace.qq.com, REJECT
 
-[Script]
-腾讯 = type=http-request,pattern=^https?:\/\/(iacc\.qq\.com|vv\.video\.qq\.com\/getvinfo),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Script/txsp.js
+
+[URL Rewrite]
+# 腾讯视频 //vv.video.qq.com
+^http:\/\/[\d\.:]*\/?(defaultts\.tc|vmind\.qqvideo\.tc|finderpdd\.video)\.qq\.com\/\w+ - reject
+^http:\/\/apd-vlive\.apdcdn\.tc\.qq\.com\/vmind\.qqvideo\.tc\.qq\.com\/\w+ - reject
+^http:\/\/apd-\w+\.v\.smtcdns\.com\/(defaultts|omts|vmind\.qqvideo)\.tc\.qq\.com\/\w+ - reject
+
+
+[Map Local]
+^https?:\/\/vv\.video\.qq\.com\/(diff|get)vmind data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
 
 [MITM]
-hostname = %APPEND% iacc.qq.com,vv.video.qq.com
+hostname = %APPEND% vv.video.qq.com
