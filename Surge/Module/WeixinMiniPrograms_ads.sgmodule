@@ -1,9 +1,9 @@
 #!name=微信小程序净化合集
 #!desc=收录常用小程序的去广告
-#!author=fmz200
+
+
 
 [URL Rewrite]
-
 # > 乘车码 @jinlvei
 ^https:\/\/ccmsupport-sz\.tenpay\.com\/cgi-bin\/common\/ccm_page_element.cgi - reject
 # > 嘀嗒出行 小程序净化 感谢#豆豆分享
@@ -18,8 +18,10 @@
 # > 小兔充充 小程序净化 感谢#豆豆分享
 ^https:\/\/ad\.xiaotucc\.com\/advert - reject
 
-[Script]
 
+
+
+[Script]
 # > 茶颜悦色 微信小程序净化
 cyys_25 = type=http-response, pattern=^https:\/\/miniapp\.sexytea2013\.com\/cms\/slot\/queryByCodes\?codes=INDEX_TOP_BANNER, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/cyys.js, timeout=60, script-update-interval=0
 
@@ -71,8 +73,11 @@ yx_209 = type=http-response, pattern=^https:\/\/api\.ulife\.group\/market\/homeI
 # > 一点点 微信小程序净化
 alittle-tea_211 = type=http-response, pattern=^https:\/\/cappapi\.alittle-tea\.com\/open\?method=catering\.set\.ad, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/alittle-tea.js, timeout=60, script-update-interval=0
 
-[Map Local]
 
+
+
+
+[Map Local]
 # > 必胜客 微信小程序净化
 ^https:\/\/res\.pizzahut\.com\.cn\/CRM data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
@@ -287,6 +292,7 @@ alittle-tea_211 = type=http-response, pattern=^https:\/\/cappapi\.alittle-tea\.c
 
 ^https:\/\/hdgateway\.zto\.com\/listJumperShow data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
-[MITM]
 
+
+[MITM]
 hostname = %APPEND% res.pizzahut.com.cn,minicap.caocaokeji.cn,ccmsupport-sz.tenpay.com,miniapp.sexytea2013.com,cbd-gateway-service-applets.hualala.com,coco-com.e.verystar.net,supplier-api.imdada.cn,conf.diditaxi.com.cn,common.diditaxi.com.cn,capis*.didapinche.com,www.deppon.com,ump.ems.com.cn,webchatapp.fcbox.com,dsp.fcbox.com,aag.enmonster.com,apis.alenable.com,newton.gumingnc.com,res.hongyibo.com.cn,qapi.huolala.cn,appuser-static.huolala.cn,api.hellobike.com,api-fouth-mem.huazhu.com,s.jiediankeji.com,applets.jtexpress.com.cn,wxapp.bestwehotel.com,orders.kfc.com.cn,dynamicad.kfc.com.cn,res.kfc.com.cn,suyun-user.daojia.com,www.benbenfx.xyz,www.bbkj.work,mobile-api.imlaidian.com,lawsonapi.yorentown.com,plt.yorentown.com,wxproj.seeyouyima.com,api.mcd.cn,mxsa.mxbc.net,triangle.wearemanner.com,ad.maoyan.com,wx.maoyan.com,vod-movie.maoyan.com,api.maoyan.com,tm-api.pin-dao.cn,webapi.qmai.cn,images.qmai.cn,mystore-gw.watsonsvip.com.cn,htwkop.xiaojukeji.com,minifm.maxxipoint.com,customer-app.sto.cn,sto-customer-app.oss-cn-shanghai.aliyuncs.com,wxs-weixin.sd.zhumanggroup.com,apiproxy.zuche.com,miniprogram.ishansong.com,ads.ishansong.com,wx.bthhotels.com,app.homeinns.com,api.songguo7.com,gw-passenger-wap.01zhuanche.com,passenger.t3go.cn,api.kuaidihelp.com,smarket.dian.so,file.dian.so,ad.xiaotucc.com,mapi.xiaotucc.com,lysl2020.com,3pp.starbucks.com.cn,go.heytea.com,passengerapi.saicmobility.com,api.ulife.group,cappapi.alittle-tea.com,alittle-tea.oss-cn-shanghai.aliyuncs.com,hdgateway.zto.com
