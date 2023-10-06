@@ -608,10 +608,4 @@ rule-providers:
 #===================================#
 # 规则集
 rules:
-    # 全球加速
-    - RULE-SET,Global,全球加速
-    - RULE-SET,Global_Domain,全球加速
-    # GeoIP China，直连
-    - GEOIP,CN,直连模式
-    # 不在上述规则中(远程以及本地)的剩余请求，将走MATCH 指定的节点/策略，这里即是 → 全球加速, 请根据自己的需求来选择直连或节点、策略
     - MATCH,全球加速
