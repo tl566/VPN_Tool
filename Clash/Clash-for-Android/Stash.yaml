@@ -95,8 +95,6 @@ dns:
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-  # 跳过证书验证，解决部分兼容性问题
-  skip-cert-verify: true
 
 
 
