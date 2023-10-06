@@ -1,7 +1,4 @@
 # Clash 配置
-# 日期：2023.03.02
-# 配置作者：https://t.me/iKeLee
-# 适用版本：所有使用 Premium 核心的Clash程序
 
 port: 7890
 socks-port: 7891
