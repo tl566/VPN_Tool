@@ -102,15 +102,18 @@ dns:
 
 #===================================#
 # 远程订阅相关
-p: &p {type: http, interval: 172800, health-check: {enable: true}}
-# 远程代理集
+proxies:
 proxy-providers:
-  Subscribe:
-    <<: *p
-    url: https://0b96e976-9ec3-44c0-aa2b-30bf8b0792ea.com/api/v1/client/subscribe?token=26f5db2b6b5e022f690b916772744640
-    # URL后面填写格式1[单一订阅]: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露]
-    # URL后面填写格式2[多个订阅]：https://api.nexconvert.com/sub?target=clash&url=请手动填入你的订阅(多机场订阅用|分割即可)&emoji=true&list=true&new_name=true&udp=false
-    path: ./proxy_providers/tmp.yaml
+  bityun:
+    type: http
+    url: "订阅转换地址"
+    interval: 3600
+    path: ./bityun.yaml
+    health-check:
+      enable: true
+      interval: 600
+      # lazy: true
+      url: http://www.gstatic.com/generate_204
 
 
 #===================================#
