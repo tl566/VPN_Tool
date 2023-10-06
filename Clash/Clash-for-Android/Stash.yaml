@@ -105,10 +105,12 @@ dns:
 p: &p {type: http, interval: 172800, health-check: {enable: true}}
 # 远程代理集
 proxy-providers:
-# 1.请使用Clash类型订阅链接填入引号url:""内使用
-# 2.或可使用通用订阅链接通过Sub-Store进行订阅转换(用于Stash)
-  
-  Subscribe: {<<: *p, url: "复制订阅地址到这里"}
+  Subscribe:
+    <<: *a1
+    #url: 订阅链接
+    # URL后面填写格式1[单一订阅]: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露]
+    # URL后面填写格式2[多个订阅]：https://api.nexconvert.com/sub?target=clash&url=请手动填入你的订阅(多机场订阅用|分割即可)&emoji=true&list=true&new_name=true&udp=false
+    path: ./proxy_providers/tmp.yaml
 
 
 #===================================#
