@@ -18,6 +18,11 @@ DOMAIN, push.m.youku.com, DIRECT
 DOMAIN, un-acs.youku.com, DIRECT
 DOMAIN, dorangesource.alicdn.com, DIRECT
 
+# 腾讯视频
+OR,((DOMAIN,pgdt.gtimg.cn), (AND,((USER-AGENT,live4iphoneRel*), (IP-CIDR,0.0.0.0/0,no-resolve)))),REJECT-DROP
+DOMAIN, config.ab.qq.com, REJECT
+
+
 
 [URL Rewrite]
 # ========== 芒果视频 ==========
