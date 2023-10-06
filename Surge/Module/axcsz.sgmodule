@@ -10,9 +10,13 @@ force-http-engine-hosts = %APPEND% kjp.cupid.iqiyi.com,t7z.cupid.iqiyi.com
 
 
 [Rule]
-# 爱奇艺
-# 放行地址
+# 爱奇艺放行地址
 DOMAIN-SUFFIX, cupid.iqiyi.com, DIRECT
+
+# 优酷放行地址
+DOMAIN, push.m.youku.com, DIRECT
+DOMAIN, un-acs.youku.com, DIRECT
+DOMAIN, dorangesource.alicdn.com, DIRECT
 
 
 [URL Rewrite]
