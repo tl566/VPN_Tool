@@ -6,7 +6,7 @@
 
 
 [General]
-force-http-engine-hosts = %APPEND% kjp.cupid.iqiyi.com,t7z.cupid.iqiyi.com
+force-http-engine-hosts = %APPEND% <ip-address>,<ip-address>:49155,*.tc.qq.com,kjp.cupid.iqiyi.com,t7z.cupid.iqiyi.com,*.smtcdns.com
 
 
 [Rule]
