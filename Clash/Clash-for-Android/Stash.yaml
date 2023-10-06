@@ -104,7 +104,7 @@ proxies:
 proxy-providers:
   bityun:
     type: http
-    url: "订阅转换地址"
+    url: "https://0b96e976-9ec3-44c0-aa2b-30bf8b0792ea.com/api/v1/client/subscribe?token=26f5db2b6b5e022f690b916772744640"
     interval: 3600
     path: ./bityun.yaml
     health-check:
