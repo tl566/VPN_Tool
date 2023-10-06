@@ -121,49 +121,12 @@ dns:
       - 0.0.0.0/32
 
 proxy-providers:
-  Airport:
-    type: http
-    url: https://d2f42a86-2a1f-49b5-bd2f-d2154daa6a09.com/api/v1/client/subscribe?token=26f5db2b6b5e022f690b916772744640
-    path: ./Server/Airport.yaml
-    interval: 3600
-    # filter: 'Hong Kong'
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 86400
-      
-  Hong Kong:
-    type: file
-    path: ./Server/Airport.yaml
-    filter: '香港|Hong Kong'
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 86400
-  #  Singapore :
- #   type: file
-  #  path: ./Server/Airport.yaml
-#    filter: 'Singapore|新加坡'
- #   health-check:
-  #    enable: true
- #     url: http://www.gstatic.com/generate_204
-   #   interval: 86400
-  Japan:
-    type: file
-    path: ./Server/Airport.yaml
-    filter: 'Japan|日本'
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 86400
-  United States:
-    type: file
-    path: ./Server/Airport.yaml
-    filter: 'United States|美国'
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 86400
+  Subscribe:
+    <<: *a1
+    #url: 订阅链接
+    # URL后面填写格式1[单一订阅]: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露]
+    # URL后面填写格式2[多个订阅]：https://api.nexconvert.com/sub?target=clash&url=请手动填入你的订阅(多机场订阅用|分割即可)&emoji=true&list=true&new_name=true&udp=false
+    path: ./proxy_providers/tmp.yaml
 
 proxy-groups:
 # 策略组示例请查阅 Clash 项目 README 以使用最新格式：https://github.com/Dreamacro/clash/blob/master/README.md
