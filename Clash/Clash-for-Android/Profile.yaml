@@ -70,7 +70,7 @@ proxy-providers:
   #全部节点
   All: &All #建立锚点
     type: http
-    url: "https://0b96e976-9ec3-44c0-aa2b-30bf8b0792ea.com/api/v1/client/subscribe?token=26f5db2b6b5e022f690b916772744640"
+    url: ""
     # 请使用Clash类型订阅链接填入引号""内使用
     interval: 3600
     path: ./all.yaml
