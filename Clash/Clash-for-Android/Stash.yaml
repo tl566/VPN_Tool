@@ -482,14 +482,6 @@ proxy-groups:
 #===================================#
 # 远程规则集
 rule-providers:
-  Anti-AD:
-    behavior: domain-text
-    interval: 172800
-    url: https://anti-ad.net/surge.txt
-  AdRule-rule:
-    behavior: domain-text
-    interval: 172800
-    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list
   Hijacking-rule:
     behavior: classical
     interval: 172800
@@ -574,26 +566,10 @@ rule-providers:
     behavior: classical
     interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
-  ChinaCompanyIp:
-    behavior: domain-text
-    interval: 172800
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-  ChinaDomain:
-    behavior: domain-text
-    interval: 172800
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
   ChinaMedia:
     behavior: classical
     interval: 172800
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
-  ProxyMedia:
-    behavior: domain-text
-    interval: 172800
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-  Streaming:
-    behavior: domain-text
-    interval: 172800
-    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list
   #全球加速
   Global:
     behavior: classical
