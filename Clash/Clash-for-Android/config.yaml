@@ -120,6 +120,9 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 
+# 策略组引用
+p:    &a1 {type: http,     interval: 86400,  health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800} }
+
 proxy-providers:
   Subscribe:
     <<: *a1
@@ -127,7 +130,7 @@ proxy-providers:
     # URL后面填写格式1[单一订阅]: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露]
     # URL后面填写格式2[多个订阅]：https://api.nexconvert.com/sub?target=clash&url=请手动填入你的订阅(多机场订阅用|分割即可)&emoji=true&list=true&new_name=true&udp=false
     path: ./proxy_providers/tmp.yaml
-
+    
 proxy-groups:
 # 策略组示例请查阅 Clash 项目 README 以使用最新格式：https://github.com/Dreamacro/clash/blob/master/README.md
  
