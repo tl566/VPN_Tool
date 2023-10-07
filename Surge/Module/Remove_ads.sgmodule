@@ -1106,7 +1106,7 @@ https?:\/\/awg\.enmonster\.com\/apa\/(advert\/demand\/home\/poster|index\/advert
 # 屏蔽图片广告，但是还有css空白模块, 要启用自行添加下一行的重写和本行右边👉🏻主机名：image.pushplus.plus
 #^https:\/\/image\.pushplus\.plus\/ad.* data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # > 浦大喜奔
-^https?:\/\/image\.spdbccc\.com\.cn\/group\d\/M00\/[7-9]{1}[A-Z0-9]{1}\/[A-Z0-9]{2}\/rBsZ.+(4038|0571)\.PNG data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+^https?:\/\/image\.spdbccc\.com\.cn\/group\d\/M00\/[A-Z0-9]{2}\/[A-Z0-9]{2}\/rBsZ.+(4038|0571|M511) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
 
 # 倒计时还在
 ^https?:\/\/image\.spdbccc\.com\.cn\/group\d\/M00\/[7-9]{1}[A-Z0-9]{1}\/[A-Z0-9]{2}\/rBsZ.+g549\.png data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
