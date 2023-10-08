@@ -1,6 +1,12 @@
 #!name=广告拦截合集-重写
 #!desc=针对部分APP开屏广告，应用内广告进行拦截，某些APP要清除缓存或者重新安装拦截广告才会生效！
-
+#############################################
+# "reject"        策略返回 HTTP 状态码 404,不附带任何额外内容
+# "https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-200.txt"    策略返回 HTTP 状态码 200,不附带任何额外内容
+# "https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-img.gif"    策略返回 HTTP 状态码 200,同时附带 1px gif
+# "https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"   策略返回 HTTP 状态码 200,同时附带一个空的 JSON 对象
+# "https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-array.json"  策略返回 HTTP 状态码 200,同时附带一个空的 JSON 数组
+#############################################
 
 
 [URL Rewrite]
