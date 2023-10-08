@@ -753,6 +753,10 @@ DOMAIN-SUFFIX, v.gdt.qq.com
 
 
 # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
+# > soul
+DOMAIN, soul-ad.soulapp.cn
+DOMAIN, ad-r.soulapp.cn
+
 # > Snapchat
 DOMAIN, ads.snapchat.com
 DOMAIN, adsapi.snapchat.com
